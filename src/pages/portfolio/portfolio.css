@@ -1,0 +1,110 @@
+.portfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    vertical-align: center;
+}
+
+.portfolio-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio-hover {
+    background-color: var(--first-color);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-hover {
+    opacity: 1;
+}
+
+.portfolio-title {
+    color: var(--text-white);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-title {
+    transform: translateY(0);
+}
+
+.portfolio-modal {
+    position: fixed;
+    inset: 0;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    z-index: 19;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
+
+.portfolio-modal-content {
+    background-color: var(--container-color);
+    max-width: 650px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: -3.5%;
+    right: -8.5%;
+    width: 50px;
+    height: 50px;
+    filter: invert(0.8);
+}
+
+
+.modal-title {
+    text-align: center;
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+.item-icon {
+    display: flex;
+}
+
+.item-title, .item-details {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.item-details {
+    font-weight: var(--weight-600);
+}
+
+.modal-item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.modal-list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px !important; 
+    margin-bottom: 24px;
+}
+
+.modal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
