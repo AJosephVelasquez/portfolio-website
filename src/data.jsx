@@ -33,7 +33,7 @@ export const links = [
         id: 1,
         name: 'Home',
         icon: <FaHome className='nav-icon' />,
-        path: '/'
+        path: '/portfolio-website'
     },
 
     {
