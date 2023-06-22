@@ -236,7 +236,7 @@ export const portfolio = [
             {
                 icon: <FaGithub />,
                 title: 'GitHub Repository: ',
-                description: '<a href="www.ajosephvelasquez.github.io/portfolio-website">www.ajosephvelasquez.github.io/portfolio-website</a>'
+                description: '<a href="https://github.com/AJosephVelasquez/portfolio-website">https://github.com/AJosephVelasquez/portfolio-website</a>'
             },
             {
                 icon: <FaCode />,
@@ -246,7 +246,7 @@ export const portfolio = [
             {
                 icon: <MdPreview />,
                 title: 'Preview: ',
-                description: ''
+                description: '<a href="https://ajosephvelasquez.github.io/portfolio-website/">https://ajosephvelasquez.github.io/portfolio-website/</a>'
             }   
         ]
     },
