@@ -49,6 +49,8 @@ function Contact(){
                 </div>
 
                 <form action="https://formsubmit.co/velasquezalain19@gmail.com" method="POST" className="contact-form">
+                    <input type="hidden" name="_url" value="https://ajosephvelasquez.github.io/contact"/>
+
                     <div className="form-input-group">
                         <div className="form-input-div">
                             <input type="text" name="name" placeholder="Your Name" className="form-control" required />
