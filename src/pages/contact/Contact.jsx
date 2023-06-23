@@ -13,7 +13,7 @@ function Contact(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate("/thank-you");
+        navigate("/thank-you/");
       };
 
     return(
