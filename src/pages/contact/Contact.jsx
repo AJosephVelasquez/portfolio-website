@@ -1,12 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './contact.css'
 import {
     FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookMessenger, FaGithub
 } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
-import { SiGmail } from 'react-icons/si'
+import { SiGmail } from 'react-icons/si';
 
 function Contact(){
+
+    const navigate = useNavigate(); 
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate("/thank-you");
+      };
+
     return(
         <section className="contact section animate-appear">
             <h2 className="section-title">
@@ -48,9 +57,8 @@ function Contact(){
                     </div>
                 </div>
 
-                <form action="https://formsubmit.co/velasquezalain19@gmail.com" method="POST" className="contact-form">
-                    <input type="hidden" name="_url" value="https://ajosephvelasquez.github.io/contact"/>
 
+                <form onSubmit={handleSubmit} method="POST" className="contact-form">
                     <div className="form-input-group">
                         <div className="form-input-div">
                             <input type="text" name="name" placeholder="Your Name" className="form-control" required />
