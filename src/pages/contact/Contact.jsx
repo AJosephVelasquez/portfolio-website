@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import './contact.css'
 import {
     FaEnvelopeOpen, FaPhoneSquareAlt, FaFacebookMessenger, FaGithub
@@ -9,12 +8,10 @@ import { SiGmail } from 'react-icons/si';
 
 function Contact(){
 
-    const navigate = useNavigate(); 
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate("/thank-you/");
-      };
+        window.location.href = "https://ajosephvelasquez.github.io/thank-you/";
+    };
 
     return(
         <section className="contact section animate-appear">
