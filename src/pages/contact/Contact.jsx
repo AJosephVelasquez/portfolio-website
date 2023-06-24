@@ -11,7 +11,7 @@ function Contact(){
     const handleSubmit = (e) => {
         e.preventDefault();
         window.location.href = "https://ajosephvelasquez.github.io/thank-you/";
-    };
+      };
 
     return(
         <section className="contact section animate-appear">
@@ -58,11 +58,11 @@ function Contact(){
                 <form onSubmit={handleSubmit} method="POST" className="contact-form">
                     <div className="form-input-group">
                         <div className="form-input-div">
-                            <input type="text" name="name" placeholder="Your Name" className="form-control" required />
+                            <input type="text" name="name" placeholder="Your Name" className="form-control" />
                         </div>
 
                         <div className="form-input-div">
-                            <input type="email" name="email" placeholder="Your Email" className="form-control"  required/>
+                            <input type="email" name="email" placeholder="Your Email" className="form-control" />
                         </div>
 
                         <div className="form-input-div">
@@ -71,7 +71,7 @@ function Contact(){
                     </div>
 
                     <div className="form-input-div">
-                        <textarea placeholder="Your Message" name="message" className="form-control textarea" required></textarea>
+                        <textarea placeholder="Your Message" name="message" className="form-control textarea"></textarea>
                     </div>
 
                     <button className="button send-button">Send Message <span className="button-icon contact-button-icon"><FiSend /></span></button>
